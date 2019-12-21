@@ -13,20 +13,26 @@ public class Person {
     private Integer age;
 
     // 2 : Constructor param
-    public Person(String name , Integer age){
+
+    // alt + insert
+    public Person(String name, Integer age) {
         this.name = name;
         this.age = age;
     }
 
-    public void setName(String name){
-        if (name.length() <= 0){
-            Log.d("BBB","Khong day du thong tin");
-            return;
-        }
-        this.name = name;
-    }
-    public String getName(){
+    public String getName() {
         return name;
     }
 
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public Integer getAge() {
+        return age;
+    }
+
+    public void setAge(Integer age) {
+        this.age = age;
+    }
 }

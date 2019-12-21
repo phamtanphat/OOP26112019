@@ -17,12 +17,16 @@ public class MainActivity extends AppCompatActivity {
         // Class
 
         // object
-        Person teo = new Person("Nguyen Van Teo",15);
-        teo.setName("Teo");
-        Log.d("BBB",teo.getName());
-
-        Person ti = new Person("Nguyen Van Ti",10);
-
+//        Person teo = new Person("Nguyen Van Teo",15);
+//        teo.setName("Teo");
+//        Log.d("BBB",teo.getName());
+//
+//        Person ti = new Person("Nguyen Van Ti",10);
         //access modifier
+
+
+        Meo kitty = new Meo();
+        kitty.name = "Kitty";
+        kitty.color = "White";
     }
 }
