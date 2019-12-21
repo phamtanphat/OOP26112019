@@ -4,6 +4,8 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 import android.util.Log;
+import android.view.View;
+import android.widget.Button;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -16,7 +18,8 @@ public class MainActivity extends AppCompatActivity {
 
         // object
         Person teo = new Person("Nguyen Van Teo",15);
-
+        teo.setName("Teo");
+        Log.d("BBB",teo.getName());
 
         Person ti = new Person("Nguyen Van Ti",10);
 
