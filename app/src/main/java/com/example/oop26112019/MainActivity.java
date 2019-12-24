@@ -1,37 +1,15 @@
 package com.example.oop26112019;
 
-import androidx.appcompat.app.AppCompatActivity;
+import android.widget.Toast;
 
-import android.os.Bundle;
-import android.util.Log;
-import android.view.View;
-import android.widget.Button;
-
-import java.util.logging.Logger;
-
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends BaseActivity{
+    @Override
+    int setLayout() {
+        return R.layout.activity_main;
+    }
 
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
-
-        // Class
-
-        // object
-//        Person teo = new Person("Nguyen Van Teo",15);
-//        teo.setName("Teo");
-//        Log.d("BBB",teo.getName());
-//
-//        Person ti = new Person("Nguyen Van Ti",10);
-        //access modifier
-
-
-        Meo kitty = new Meo();
-        kitty.name = "Kitty";
-        kitty.color = "White";
-
-        kitty.setLanguage("Meo Meo");
-        Log.d("BBB",kitty.speak);
+    void show() {
+        Toast.makeText(this, "Hello", Toast.LENGTH_SHORT).show();
     }
 }
