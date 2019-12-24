@@ -7,6 +7,8 @@ import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 
+import java.util.logging.Logger;
+
 public class MainActivity extends AppCompatActivity {
 
     @Override
@@ -28,5 +30,8 @@ public class MainActivity extends AppCompatActivity {
         Meo kitty = new Meo();
         kitty.name = "Kitty";
         kitty.color = "White";
+
+        kitty.setLanguage("Meo Meo");
+        Log.d("BBB",kitty.speak);
     }
 }

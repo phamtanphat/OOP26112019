@@ -1,6 +1,11 @@
 package com.example.oop26112019;
 
 public class Animal {
-    public String name;
-    public String color;
+    String name;
+    String color;
+    String speak;
+
+    public void setLanguage(String language){
+        this.speak = language;
+    }
 }
